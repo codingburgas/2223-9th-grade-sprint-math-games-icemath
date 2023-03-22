@@ -1,5 +1,5 @@
 #pragma once
-#include <SFML/Graphics.hpp>
+#include "SFML/Graphics.hpp"
 #include <iostream>
 
 using namespace std;
@@ -19,6 +19,7 @@ public:
 		return MainMenuSelected;
 	}
 	~MainMenu();
+	void defaultMenu();
 
 private:
 	int MainMenuSelected;

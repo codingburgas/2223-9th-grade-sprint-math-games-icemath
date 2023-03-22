@@ -1,8 +1,6 @@
-#include <SFML/Graphics.hpp>
-#include "MainMenu.h"
-using namespace sf;
+#include "defaultMenu.h"
 
-void main()
+void defaultMenu()
 {
 	RenderWindow MENU(VideoMode(960, 720), "Main Menu", Style::Default);
 	MainMenu mainMenu(MENU.getSize().x, MENU.getSize().y);
