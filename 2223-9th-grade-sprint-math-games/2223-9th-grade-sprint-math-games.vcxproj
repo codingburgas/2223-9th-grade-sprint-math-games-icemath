@@ -134,6 +134,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2223-9th-grade-sprint-math-games.cpp" />
+    <ClCompile Include="About.cpp" />
     <ClCompile Include="defaultMenu.cpp" />
     <ClCompile Include="Exercises.cpp" />
     <ClCompile Include="Frame.cpp" />
@@ -142,6 +143,7 @@
     <ClCompile Include="Menu.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="About.h" />
     <ClInclude Include="defaultMenu.h" />
     <ClInclude Include="Exercises.h" />
     <ClInclude Include="Frame.h" />

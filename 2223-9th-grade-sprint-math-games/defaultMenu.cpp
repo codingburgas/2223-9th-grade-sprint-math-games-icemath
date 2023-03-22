@@ -1,9 +1,24 @@
 #include "defaultMenu.h"
-
+#include "About.h"
 void defaultMenu()
 {
 	RenderWindow MENU(VideoMode(960, 720), "Main Menu", Style::Default);
 	MainMenu mainMenu(MENU.getSize().x, MENU.getSize().y);
+
+	//set  background
+	RectangleShape background;
+	background.setSize(Vector2f(960, 720));
+	Texture Maintexture;
+	Maintexture.loadFromFile("../photos/background.png");
+	background.setTexture(&Maintexture);
+
+	//about
+	RectangleShape aboutBackground;
+	aboutBackground.setSize(Vector2f(960, 720));
+	Texture aboutTexture;
+	aboutTexture.loadFromFile("../photos/backgroundAbout.jpg");
+	aboutBackground.setTexture(&aboutTexture);
+
 
 	while (MENU.isOpen())
 	{
@@ -106,6 +121,7 @@ void defaultMenu()
 							Play.close();
 							OPTIONS.close();
 							ABOUT.clear();
+							ABOUT.draw(aboutBackground);
 							ABOUT.display();
 						}
 					}
@@ -116,6 +132,7 @@ void defaultMenu()
 			}
 		}
 		MENU.clear();
+		MENU.draw(background);
 		mainMenu.draw(MENU);
 		MENU.display();
 	}
