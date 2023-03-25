@@ -6,6 +6,7 @@ using namespace std;
 using namespace sf;
 
 #define Max_main_menu 4
+
 class MainMenu
 {
 public: 
@@ -20,6 +21,8 @@ public:
 	}
 	~MainMenu();
 	void defaultMenu();
+	void PLay();
+
 
 private:
 	int MainMenuSelected;

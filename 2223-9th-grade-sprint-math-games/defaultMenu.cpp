@@ -19,6 +19,13 @@ void defaultMenu()
 	aboutTexture.loadFromFile("../photos/backgroundAbout.jpg");
 	aboutBackground.setTexture(&aboutTexture);
 
+	//set background for play
+	RectangleShape playBackground;
+	playBackground.setSize(Vector2f(960, 720));
+	Texture Playtexture;
+	Playtexture.loadFromFile("../photos/background.png");
+	playBackground.setTexture(&Playtexture);
+
 
 	while (MENU.isOpen())
 	{
@@ -71,6 +78,7 @@ void defaultMenu()
 							OPTIONS.close();
 							ABOUT.close();
 							Play.clear();
+							Play.draw(playBackground);
 							Play.display();
 						}
 					}
@@ -136,4 +144,5 @@ void defaultMenu()
 		mainMenu.draw(MENU);
 		MENU.display();
 	}
+
 }

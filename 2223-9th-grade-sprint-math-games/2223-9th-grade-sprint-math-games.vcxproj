@@ -136,20 +136,14 @@
     <ClCompile Include="2223-9th-grade-sprint-math-games.cpp" />
     <ClCompile Include="About.cpp" />
     <ClCompile Include="defaultMenu.cpp" />
-    <ClCompile Include="Exercises.cpp" />
-    <ClCompile Include="Frame.cpp" />
-    <ClCompile Include="Lessons.cpp" />
     <ClCompile Include="MainMenu.cpp" />
-    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Play.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="About.h" />
     <ClInclude Include="defaultMenu.h" />
-    <ClInclude Include="Exercises.h" />
-    <ClInclude Include="Frame.h" />
-    <ClInclude Include="Lessons.h" />
     <ClInclude Include="MainMenu.h" />
-    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Play.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

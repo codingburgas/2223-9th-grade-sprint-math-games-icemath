@@ -1,4 +1,5 @@
 #include "MainMenu.h"
+#include "Play.h"
 
 MainMenu::MainMenu(float width, float height)
 {
@@ -30,6 +31,8 @@ MainMenu::MainMenu(float width, float height)
 	mainMenu[3].setString("EXIT");
 	mainMenu[3].setCharacterSize(70);
 	mainMenu[3].setPosition(350, 500);
+
+
 
 	MainMenuSelected = -1;
 }
@@ -135,6 +138,7 @@ void MainMenu::defaultMenu()
 							ABOUT.close();
 							Play.clear();
 							Play.display();
+							
 						}
 					}
 					if (x == 1)
@@ -198,3 +202,7 @@ void MainMenu::defaultMenu()
 		MENU.display();
 	}
 }
+
+
+
+
