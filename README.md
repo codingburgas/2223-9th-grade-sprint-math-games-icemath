@@ -1,5 +1,5 @@
-# 2223-9th-grade-sprint-math-games-icemath
-2223-9th-grade-sprint-math-games-icemath created by GitHub Classroom
+<!--# 2223-9th-grade-sprint-math-games-icemath
+2223-9th-grade-sprint-math-games-icemath created by GitHub Classroom-->
 <h1 align="center">Hi There, We are <a href="https://github.com/codingburgas/2223-9th-grade-sprint-math-games-icemath">Icemath👋</a></h1>
 
 <h2>🚀 Our Information </h2>
