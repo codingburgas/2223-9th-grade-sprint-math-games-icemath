@@ -3,6 +3,7 @@
 
 MainMenu::MainMenu(float width, float height)
 {
+	//font
 	if (font.loadFromFile("../Fonts/UGOCOLOR.ttf"))
 	{
 		cout << "No font is here";
@@ -80,16 +81,17 @@ void MainMenu::MoveDown()
 		mainMenu[MainMenuSelected].setFillColor(Color::Blue);
 	}
 }
-
+//Menu
 void MainMenu::defaultMenu()
 {
-	cout << "npc";
+	//Menu settings
 	Texture backgroundTexture;
 	RenderWindow MENU(VideoMode(960, 720), "Main Menu", Style::Default);
 	MainMenu mainMenu(MENU.getSize().x, MENU.getSize().y);
 	backgroundTexture.loadFromFile("../photos/backgroundTexture.png");
 	field play(Color::White, 0, 0, 350, 350, 1, 1, backgroundTexture);
 
+	//Events
 	while (MENU.isOpen())
 	{
 		Event event;

@@ -134,7 +134,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2223-9th-grade-sprint-math-games.cpp" />
-    <ClCompile Include="About.cpp" />
     <ClCompile Include="defaultMenu.cpp" />
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="Play.cpp" />

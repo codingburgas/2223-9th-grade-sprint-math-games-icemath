@@ -24,9 +24,6 @@
     <ClCompile Include="defaultMenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="About.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Play.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

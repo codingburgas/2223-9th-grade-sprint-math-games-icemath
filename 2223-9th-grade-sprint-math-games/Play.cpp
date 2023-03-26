@@ -3,6 +3,7 @@
 
 field::field(sf::Color bgColor, int sizeX, int sizeY, float posX, float posY, float scaleX, float scaleY, sf::Texture& backgroundTexture)
 {
+	//set parameters
 	this->background.setTexture(backgroundTexture);
 	this->background.setPosition(sf::Vector2f(posX, posY));
 	this->background.setScale(scaleX, scaleY);
@@ -16,7 +17,7 @@ field::field(sf::Color bgColor, int sizeX, int sizeY, float posX, float posY, fl
 	this->input.setFillColor(sf::Color(255, 255, 255));
 	this->input.setPosition(480 + 20, 400);
 
-
+	//question list
 	this->QNAV = {
 		{"WHAT IS THE ANSWER OF 13 AND 8", "8"},
 		{"WHAT IS THE ANSWER OF 21 OR 3", "23"},
@@ -29,7 +30,7 @@ field::field(sf::Color bgColor, int sizeX, int sizeY, float posX, float posY, fl
 		{"WHAT IS THE ANSWER OF 22 XOR 61", "43"},
 		{"WHAT IS THE COMPLEMENT OF ~35", "-36"},
 		{"WHAT IS THE ANSWER OF 91 RIGHT SHIFTED BY 2", "22"},
-		{"WHAT IS THE ANSWER OF 92  3", "736"},
+		{"WHAT IS THE ANSWER OF 92 LEFT SHIFTED BY 3", "736"},
 		{"", ""}
 	};
 }

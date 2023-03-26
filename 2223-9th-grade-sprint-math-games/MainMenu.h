@@ -4,7 +4,7 @@
 
 using namespace std;
 using namespace sf;
-
+//define menu elements size
 #define Max_main_menu 4
 
 class MainMenu
@@ -21,7 +21,6 @@ public:
 	}
 	~MainMenu();
 	void defaultMenu();
-	void Play();
 
 
 private:

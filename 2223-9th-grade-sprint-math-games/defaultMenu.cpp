@@ -2,13 +2,13 @@
 #include "About.h"
 #include "Play.h"
 
-
+//score funtion
 void scoreDisplay(RenderWindow& window, int score, RectangleShape& playBackground)
 {
 	Font font;
 	font.loadFromFile("../Fonts/UGOCOLOR.ttf");
 	Text text;
-	text.setString("YOUR SCORE IS: " + to_string(score));
+	text.setString("YOUR SCORE IS: " + to_string(score) + " OUT OF 12");
 	text.setCharacterSize(36);
 	text.setPosition(250, 350);
 	text.setFont(font);
@@ -33,13 +33,13 @@ void scoreDisplay(RenderWindow& window, int score, RectangleShape& playBackgroun
 	}
 }
 
-
+//menu
 void defaultMenu()
 {
 	int score = 0;
 	int questionCounter = 0;
 	
-
+	//set menu parameters
 	RenderWindow MENU(VideoMode(960, 720), "Main Menu", Style::Default);
 	MainMenu mainMenu(MENU.getSize().x, MENU.getSize().y);
 
@@ -50,7 +50,7 @@ void defaultMenu()
 	Maintexture.loadFromFile("../photos/background.png");
 	background.setTexture(&Maintexture);
 
-	//about
+	//set about picture
 	RectangleShape aboutBackground;
 	aboutBackground.setSize(Vector2f(960, 720));
 	Texture aboutTexture;
@@ -68,53 +68,48 @@ void defaultMenu()
 	backgroundTexture.loadFromFile("../photos/Background-ICEMATH-1.png");
 	field play(Color::White, 0, 0, 0, 0, 1.0670, 1.0670, backgroundTexture);
 
-	/*RectangleShape lesson1;
-	lesson1.setSize(Vector2f(960, 720));
-	Texture lessons1texture;
-	lessons1texture.loadFromFile("../photos/ANDoperator.png");
-	lesson1.setTexture(&lessons1texture);
-	lesson1.setScale(Vector2f(1.0615, 1.0611));*/
 
 	string answer;
 	int row = 0;
 	int lessonsCounter = 0;
-
+	//lesson 1 picture
 	Texture picture1;
 	Sprite pictureSprite1;
 	picture1.loadFromFile("../photos/Bitwise_AND-1.png");
 	pictureSprite1.setTexture(picture1);
 	pictureSprite1.setScale(1.0615, 1.0611);
-
+	//lesson 2 picture
 	Texture picture2;
 	Sprite pictureSprite2;
 	picture2.loadFromFile("../photos/Bitwise_OR-1.png");
 	pictureSprite2.setTexture(picture2);
 	pictureSprite2.setScale(1.0615, 1.0611);
-
+	//lesson 3 picture
 	Texture picture3;
 	Sprite pictureSprite3;
 	picture3.loadFromFile("../photos/Bitwise_XOR-1.png");
 	pictureSprite3.setTexture(picture3);
 	pictureSprite3.setScale(1.0615, 1.0611);
-
+	//lesson 4 picture
 	Texture picture4;
 	Sprite pictureSprite4;
 	picture4.loadFromFile("../photos/Bitwise_-~.png");
 	pictureSprite4.setTexture(picture4);
 	pictureSprite4.setScale(1.0615, 1.0611);
-
+	//lesson 5 picture
 	Texture picture5;
 	Sprite pictureSprite5;
 	picture5.loadFromFile("../photos/Right_shift-1.png");
 	pictureSprite5.setTexture(picture5);
 	pictureSprite5.setScale(1.0615, 1.0611);
-
+	//lesson 6 picture
 	Texture picture6;
 	Sprite pictureSprite6;
 	picture6.loadFromFile("../photos/Left_shift-1.png");
 	pictureSprite6.setTexture(picture6);
 	pictureSprite6.setScale(0.36, 0.37);
 
+	//Events Main Menu
 	while (MENU.isOpen())
 	{
 		Event event;
@@ -242,6 +237,7 @@ void defaultMenu()
 							Play.close();
 							LESSONS.clear();
 							ABOUT.close();
+							//display lessons
 							if (lessonsCounter == 0)
 							{
 								LESSONS.draw(pictureSprite1);
@@ -271,6 +267,7 @@ void defaultMenu()
 					}
 					if (x == 2)
 					{
+						//display about
 						while (ABOUT.isOpen())
 						{
 							Event aevent;
@@ -295,12 +292,13 @@ void defaultMenu()
 							ABOUT.display();
 						}
 					}
+					//close menu
 					if (x == 3)
 						MENU.close();
 					break;
 				}
 			}
-		}
+		} 
 		MENU.clear();
 		MENU.draw(background);
 		mainMenu.draw(MENU);
