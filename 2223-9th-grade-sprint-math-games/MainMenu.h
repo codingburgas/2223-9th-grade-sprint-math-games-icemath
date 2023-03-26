@@ -21,7 +21,7 @@ public:
 	}
 	~MainMenu();
 	void defaultMenu();
-	void PLay();
+	void Play();
 
 
 private:

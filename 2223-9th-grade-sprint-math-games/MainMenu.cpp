@@ -3,7 +3,7 @@
 
 MainMenu::MainMenu(float width, float height)
 {
-	if (!font.loadFromFile("../Fonts/UGOCOLOR.ttf"))
+	if (font.loadFromFile("../Fonts/UGOCOLOR.ttf"))
 	{
 		cout << "No font is here";
 	}
@@ -83,8 +83,12 @@ void MainMenu::MoveDown()
 
 void MainMenu::defaultMenu()
 {
+	cout << "npc";
+	Texture backgroundTexture;
 	RenderWindow MENU(VideoMode(960, 720), "Main Menu", Style::Default);
 	MainMenu mainMenu(MENU.getSize().x, MENU.getSize().y);
+	backgroundTexture.loadFromFile("../photos/backgroundTexture.png");
+	field play(Color::White, 0, 0, 350, 350, 1, 1, backgroundTexture);
 
 	while (MENU.isOpen())
 	{
@@ -111,7 +115,7 @@ void MainMenu::defaultMenu()
 				if (event.key.code == Keyboard::Return)
 				{
 					RenderWindow Play(VideoMode(960, 720), "Icemath");
-					RenderWindow OPTIONS(VideoMode(960, 720), "OPTIONS");
+					RenderWindow LESSONS(VideoMode(960, 720), "LESSONS");
 					RenderWindow ABOUT(VideoMode(960, 720), "ABOUT");
 
 					int x = mainMenu.MainMenuPressed();
@@ -134,35 +138,36 @@ void MainMenu::defaultMenu()
 									}
 								}
 							}
-							OPTIONS.close();
+							LESSONS.close();
 							ABOUT.close();
 							Play.clear();
+							play.draw(Play);
 							Play.display();
 						}
 					}
 					if (x == 1)
 					{
-						while (OPTIONS.isOpen())
+						while (LESSONS.isOpen())
 						{
 							Event aevent;
-							while (OPTIONS.pollEvent(aevent))
+							while (LESSONS.pollEvent(aevent))
 							{
 								if (aevent.type == Event::Closed)
 								{
-									OPTIONS.close();
+									LESSONS.close();
 								}
 								if (aevent.type == Event::KeyPressed)
 								{
 									if (aevent.key.code == Keyboard::Escape)
 									{
-										OPTIONS.close();
+										LESSONS.close();
 									}
 								}
 							}
 							Play.close();
-							OPTIONS.clear();
+							LESSONS.clear();
 							ABOUT.close();
-							OPTIONS.display();
+							LESSONS.display();
 						}
 					}
 					if (x == 2)
@@ -185,7 +190,7 @@ void MainMenu::defaultMenu()
 								}
 							}
 							Play.close();
-							OPTIONS.close();
+							LESSONS.close();
 							ABOUT.clear();
 							ABOUT.display();
 						}
