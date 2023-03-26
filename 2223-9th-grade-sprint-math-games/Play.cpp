@@ -9,7 +9,7 @@ Play::Play(float weight, float height)
 
 	TasksNumber[0].setFont(font);
 	TasksNumber[0].setFillColor(Color::White);
-	TasksNumber[0].setString("Task 1");
+	TasksNumber[0].setString("TASK ");
 	TasksNumber[0].setCharacterSize(70);
 	TasksNumber[0].setPosition(150, 200);
 

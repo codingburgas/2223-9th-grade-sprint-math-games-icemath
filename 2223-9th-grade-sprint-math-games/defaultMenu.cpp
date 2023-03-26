@@ -16,7 +16,7 @@ void defaultMenu()
 	RectangleShape aboutBackground;
 	aboutBackground.setSize(Vector2f(960, 720));
 	Texture aboutTexture;
-	aboutTexture.loadFromFile("../photos/backgroundAbout.jpg");
+	aboutTexture.loadFromFile("../photos/backgroundAbout.png");
 	aboutBackground.setTexture(&aboutTexture);
 
 	//set background for play

@@ -16,13 +16,13 @@ MainMenu::MainMenu(float width, float height)
 	//Options
 	mainMenu[1].setFont(font);
 	mainMenu[1].setFillColor(Color::White);
-	mainMenu[1].setString("OPTIONS");
+	mainMenu[1].setString("LESSONS");
 	mainMenu[1].setCharacterSize(70);
 	mainMenu[1].setPosition(350, 300);
 	//About
 	mainMenu[2].setFont(font);
 	mainMenu[2].setFillColor(Color::White);
-	mainMenu[2].setString("ABOUT");
+	mainMenu[2].setString("ABOUT US");
 	mainMenu[2].setCharacterSize(70);
 	mainMenu[2].setPosition(350, 400);
 	//Exit
@@ -138,7 +138,6 @@ void MainMenu::defaultMenu()
 							ABOUT.close();
 							Play.clear();
 							Play.display();
-							
 						}
 					}
 					if (x == 1)
