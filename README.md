@@ -2,12 +2,17 @@
 2223-9th-grade-sprint-math-games-icemath created by GitHub Classroom-->
 <h1 align="center">Hi There, We are <a href="https://github.com/codingburgas/2223-9th-grade-sprint-math-games-icemath">Icemath👋</a></h1>
 
+<p align = "center">
+	<img src = "photos/Logo_Icemath.png" alt = "Icemath's Logo">
+</p>
+
 <h2>🚀 Our Information </h2>
 
-- We study in vocation school for computer programing and inovation!
+- We are studying in vocational school for computer programing and inovation!
 - We are interested in programing!
 
 ## 📋 Description
+The aim of our application is to help with learning betwise operation. There are 12 random questions in the application itself. When you answer correctly you get 1 point.
 
 ## 🔧 Tools  
 <p align="left" >
@@ -22,6 +27,10 @@
   </p>
   
   ## 💼 Documents
+<ul>
+	<li> <a href = "Documentation/Documentation_Icemath.docx"> Documentation </a></li>
+	<li> <a href = "Documentation/Presentation_Icemath.pptx"> Presentation </a></li>
+</ul>
   
   ## 📥 Installation
   ```
