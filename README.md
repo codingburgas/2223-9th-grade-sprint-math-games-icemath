@@ -18,7 +18,7 @@
     <a href="https://www.microsoft.com/en-us/microsoft-365/excel"><img src="https://img.icons8.com/fluency/48/000000/microsoft-excel-2019.png" alt="MS Excel logo"/></a>
     <a href="https://git-scm.com/"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" heigh=48px width=48px/></a>
     <a href="https://git-scm.com/"><img src="https://img.icons8.com/color/48/000000/git.png" alt="Git"/></a>
-      
+      <a> <img src="https://cdn-icons-png.flaticon.com/512/5611/5611037.png" alt="iliistrator" heigh=48px width=48px/> </a> 
   </p>
   
   ## 💼 Documents
@@ -28,7 +28,7 @@
   You can download our project by using the green "Code" button.
   ```
    
-  ## 🏆 Team Members
+  ## 🏆 Our Team
   
   * **Nikoleta Ruseva** - *Scrum trainer*
   * **Kaloyan Georgiev** - *Backend developer*
