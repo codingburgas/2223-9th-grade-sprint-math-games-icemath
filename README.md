@@ -14,7 +14,7 @@
 ## 📋 Description
 The aim of our application is to help with learning betwise operation. There are 12 random questions in the application itself. When you answer correctly you get 1 point.
 
-## 🔧 Tools  
+## 🛠️ Tools  
 <p align="left" >
 <a> <img src="https://img.icons8.com/ios-filled/50/4a90e2/c-plus-plus-logo.png"/> </a> 
 <a href="https://visualstudio.microsoft.com/"><img src="https://img.icons8.com/fluency/48/000000/visual-studio.png" alt="Visual Studio 2019"/></a>
@@ -26,10 +26,16 @@ The aim of our application is to help with learning betwise operation. There are
       <a> <img src="https://cdn-icons-png.flaticon.com/512/5611/5611037.png" alt="iliistrator" heigh=48px width=48px/> </a> 
   </p>
   
-  ## 💼 Documents
+  ## 🗃️ Documents
 <ul>
 	<li> <a href = "Documentation/Documentation_Icemath.docx"> Documentation </a></li>
 	<li> <a href = "Documentation/Presentation_Icemath.pptx"> Presentation </a></li>
+</ul>
+
+  ## 🗂️ QA Documents
+<ul>
+	<li> <a href = "QA/QA_Documentation.docx"> QA Test Plan </a></li>
+	<li> <a href = "QA/QA_Icemath.xlsx"> QA Unit Testing </a></li>
 </ul>
   
   ## 📥 Installation
